@@ -1,4 +1,12 @@
-.form > .form-group {
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+/* .form > .form-group {
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -65,5 +73,5 @@
   opacity: 1;
   visibility: visible;
   transform: translatey(1rem);
-}
+} */
 
