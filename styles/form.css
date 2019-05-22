@@ -2,6 +2,14 @@
   display: flex;
   justify-content: center;
 }
+.form-wrapper a {
+  color: #11122b;
+  font-size: 1.3em;
+}
+.form-wrapper a:hover {
+  color: #9fe2d9;
+  font-size: 1.3em;
+}
 
 
 
