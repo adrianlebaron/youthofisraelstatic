@@ -2,12 +2,14 @@
 .hero-section {
   background-image: url(../images/backgrounds/group2017.jpg);
   padding:100px;
-  height: 300px;
-  -moz-backface-visibility: hidden;
+  height: 100%;
+  /* -moz-backface-visibility: hidden; */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  /* background-size: contain;
+  background-position: 0 50px; */
 }
 
 .hero-section > .top-heading{
