@@ -1,3 +1,10 @@
 .html{
   width: 100%;
 }
+.whatsappLink i{
+  color: #25d366;
+}
+
+.emailLink i{
+  color: #1de57a;
+}
