@@ -25,11 +25,17 @@
   display: flex;
   justify-content: center;
   width: 100vw;
+  color: aliceblue;
 }
 
-.skewed-header > .skewed-header-wrapper > .skewed-header-content {
+.skewed-header > .skewed-header-wrapper > {
   width: 1000px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+
+.skewed-header-content {
+  color: cornsilk;
 }

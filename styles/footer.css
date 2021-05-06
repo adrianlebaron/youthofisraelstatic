@@ -2,7 +2,7 @@
 .footer {
     background-color: #9fe2d9;
     color: #073b34;
-    font-family: "Ubuntu Condensed", sans-serif;
+    font-family: 'Itim', cursive;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,9 +24,18 @@
     margin-right: 10px;
     font-size: 1em;
     letter-spacing: 2px;
+    font-family: 'Itim', cursive;
+  
 }
 
 .footer > .footer-phone-hours > .hours {
+    font-size: 1.1em;
+    color: #073b34;
+    font: bold;
+    text-transform: uppercase;
+}
+
+.footer-letras{
     font-size: 1.1em;
     color: #073b34;
     font: bold;

@@ -54,6 +54,7 @@
 
   .skewed-header > .skewed-header-wrapper > .skewed-header-content {
       flex-direction: column;
+      color: seashell;
   }
 
   .skewed-header > .header-bg {
@@ -63,11 +64,12 @@
   .page-container {
       padding-left: 21px;
       padding-right: 21px;
+      width: 90% ;
   }
 
   .content-wrapper > #chef {
-      margin: 0px 0px 25px 0px !important;
-      width: 100% !important;
+      margin: 0px 0px 25px 0px ;
+      width: 90% ;
   }
 
   .square {
@@ -76,6 +78,7 @@
 
   .square > .square-text-wrapper {
       order: 1;
+      font-family: 'Itim', cursive;
   }
 
   .square > .img-wrapper {
