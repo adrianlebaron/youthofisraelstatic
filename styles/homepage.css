@@ -19,7 +19,7 @@
   color: #11122b;
   width: 290px;
   border-radius: 2px;
-  color:navy ;
+  color:rgba(0, 0, 80, 0.952) ;
 }
 .hero-section > .bottom-heading{
   background-color:549431;
@@ -28,7 +28,7 @@
   margin-top: 15px;
   width: 100%;
   border-radius: 2px;
-  color:yellow ;
+  color:rgba(0, 0, 80, 0.952) ;
 }
 
 /* Features section styles */
@@ -84,7 +84,7 @@
 
 
 .redirectingTolebarongaleana {
-  font-family: 'Caveat', cursive;
+  font-family: 'Inconsolata', monospace;
   width: 101%;
   color: lightseagreen;
 }
