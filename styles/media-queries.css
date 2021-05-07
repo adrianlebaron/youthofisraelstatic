@@ -1,8 +1,9 @@
-@media (max-width: 615px) {
+@media (max-width: 378px) {
   .navigation-wrapper {
       flex-direction: column;
       height: 100%;
       padding: 0px 0px;
+    
   }
 
   .navigation-wrapper > .left-column {
