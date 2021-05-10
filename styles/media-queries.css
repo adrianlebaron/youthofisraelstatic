@@ -1,4 +1,4 @@
-@media (max-width: 378px) {
+@media (max-width: 414px) {
   .navigation-wrapper {
       flex-direction: column;
       height: 100%;
@@ -23,8 +23,6 @@
   }
 
   .links-wrapper {
-
-      flex-direction: column;
       justify-items: center;
       margin-bottom: 20px;
   }
