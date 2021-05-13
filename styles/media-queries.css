@@ -26,6 +26,7 @@
       justify-items: center;
       margin-bottom: 20px;
       background-color: skyblue;
+      letter-spacing: 3px;
   }
 
   .links-wrapper > .nav-link {
