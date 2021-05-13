@@ -25,6 +25,7 @@
   .links-wrapper {
       justify-items: center;
       margin-bottom: 20px;
+      background-color: skyblue;
   }
 
   .links-wrapper > .nav-link {
