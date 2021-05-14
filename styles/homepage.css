@@ -2,7 +2,7 @@
 .hero-section {
   background-image: url(../images/backgrounds/Arial2.jpeg);
   height: 150%;
-  width: 96%;
+  width: 94%;
 
   /* -moz-backface-visibility: hidden; */
   background-attachment: fixed;
@@ -11,15 +11,15 @@
   background-size: 100%;
   /* background-size: contain;
   background-position: 0 50px; */
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Oswald', sans-serif;
 }
 
 .hero-section > .top-heading{
   background-color:transparent;
-  color: #11122b;
+  color:rgb(1, 23, 46) ;
   width: 290px;
   border-radius: 2px;
-  color:rgba(0, 0, 80, 0.952) ;
+  color:rgb(0, 5, 10) ;
 }
 .hero-section > .bottom-heading{
   background-color:549431;
@@ -28,7 +28,7 @@
   margin-top: 15px;
   width: 100%;
   border-radius: 2px;
-  color:rgba(0, 0, 80, 0.952) ;
+  color:rgb(0, 5, 10) ;
 }
 
 /* Features section styles */
