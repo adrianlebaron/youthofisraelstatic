@@ -73,8 +73,7 @@
     color: #073b34;
     text-decoration: none;
     transition: 0.5s;
-    letter-spacing: 0px;
-    padding-right: 15%;
+    letter-spacing: 4px;
 }
 .links-wrapper > .nav-link a:hover {
     color: #deecea;
