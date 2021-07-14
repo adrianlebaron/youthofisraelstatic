@@ -53,6 +53,7 @@
     justify-content: center;
 }    
 .navigation-wrapper > .center-column > .banner-image img {
+    padding-top: 80px;
     width:  60%;
     height: 70%;
 }
