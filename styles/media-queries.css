@@ -1,8 +1,9 @@
-@media (max-width: 615px) {
+@media (max-width: 460px) {
   .navigation-wrapper {
       flex-direction: column;
       height: 100%;
       padding: 0px 0px;
+    
   }
 
   .navigation-wrapper > .left-column {
@@ -22,10 +23,11 @@
   }
 
   .links-wrapper {
-
-      flex-direction: column;
       justify-items: center;
       margin-bottom: 20px;
+      background-color: skyblue;
+      letter-spacing: 4px;
+      letter-spacing: 4px;
   }
 
   .links-wrapper > .nav-link {
@@ -33,6 +35,7 @@
       margin-bottom: 10px;
       font-size: 1.5em;
       width: 100%;
+      letter-spacing: 4px;
   }
 
   .hero-section {
@@ -54,6 +57,7 @@
 
   .skewed-header > .skewed-header-wrapper > .skewed-header-content {
       flex-direction: column;
+      color: seashell;
   }
 
   .skewed-header > .header-bg {
@@ -63,11 +67,12 @@
   .page-container {
       padding-left: 21px;
       padding-right: 21px;
+      width: 90% ;
   }
 
   .content-wrapper > #chef {
-      margin: 0px 0px 25px 0px !important;
-      width: 100% !important;
+      margin: 0px 0px 25px 0px ;
+      width: 90% ;
   }
 
   .square {
@@ -76,6 +81,7 @@
 
   .square > .square-text-wrapper {
       order: 1;
+      font-family: 'Itim', cursive;
   }
 
   .square > .img-wrapper {

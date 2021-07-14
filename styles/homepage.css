@@ -1,8 +1,9 @@
 /**/
 .hero-section {
   background-image: url(../images/backgrounds/Arial2.jpeg);
-  height: 100%;
-  width: auto;
+  height: 150%;
+  width: 94%;
+
   /* -moz-backface-visibility: hidden; */
   background-attachment: fixed;
   background-position: center;
@@ -10,13 +11,15 @@
   background-size: 100%;
   /* background-size: contain;
   background-position: 0 50px; */
+  font-family: 'Oswald', sans-serif;
 }
 
 .hero-section > .top-heading{
   background-color:transparent;
-  color: #11122b;
+  color:rgb(1, 23, 46) ;
   width: 290px;
   border-radius: 2px;
+  color:rgb(0, 5, 10) ;
 }
 .hero-section > .bottom-heading{
   background-color:549431;
@@ -25,6 +28,7 @@
   margin-top: 15px;
   width: 100%;
   border-radius: 2px;
+  color:rgb(0, 5, 10) ;
 }
 
 /* Features section styles */
@@ -76,4 +80,18 @@
 
 .features-section > .columns-wrapper > .column :nth-child(3) {
   letter-spacing: 2px;
+}
+
+
+.redirectingTolebarongaleana {
+  font-family: 'Inconsolata', monospace;
+  width: 101%;
+  color:rgb(49, 48, 48);
+}
+
+
+.fechas{
+  padding-left: 5%;
+  text-align: center;
+  color: #ff0000;
 }

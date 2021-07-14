@@ -38,6 +38,7 @@
 .links-wrapper > .nav-link a {
     font-family: 'Ubuntu Condensed', sans-serif;
     color: white;
+    letter-spacing: 4px;
 
 /*Center column  style*/
 }
@@ -52,27 +53,31 @@
     justify-content: center;
 }    
 .navigation-wrapper > .center-column > .banner-image img {
-    width: 216px;
-    height: 100%;
+    width:  60%;
+    height: 70%;
 }
 .links-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    letter-spacing: 4px;
 }
 .links-wrapper > .nav-link {
     width: 70px;
     text-align: center;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 4px;
 }
 .links-wrapper > .nav-link a {
     font-family: "Ubuntu Condensed", sans-serif;
     color: #073b34;
     text-decoration: none;
     transition: 0.5s;
+    letter-spacing: 4px;
 }
 .links-wrapper > .nav-link a:hover {
     color: #deecea;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
 }
 /*Right column  style*/
 .navigation-wrapper > .right-column > .address-wrapper {

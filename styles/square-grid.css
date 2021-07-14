@@ -25,9 +25,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 80%;
     padding: 42px;
 }
-
+       
 .square > .square-text-wrapper h1 {
     color: #cea135;
+    font-family: 'Pacifico', cursive;
 }
