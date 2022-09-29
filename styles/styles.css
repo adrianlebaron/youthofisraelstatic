@@ -151,9 +151,10 @@ body {
 
 
 .logo-2 {
-  position:relative;
-  padding-left:  70%;
-  position: absolute;
+
+  padding-left:  43%;
+
+  width: 75%;
   color: #0e2431;
 }
 
@@ -177,4 +178,5 @@ body {
 .nav-container input[type="checkbox"]:checked ~ .logo{
   display: none;
 }
+
 
