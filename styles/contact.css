@@ -16,6 +16,11 @@ body {
     letter-spacing: 6px;
   }
   
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
   .alt-send-button {
     width: 400px;
     height: 34px;
@@ -47,7 +52,7 @@ body {
   
   .list-item {
     line-height: 4;
-    color: #aaa;
+    color: green;
   }
   
   .contact-text {
