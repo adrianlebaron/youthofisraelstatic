@@ -1,61 +1,68 @@
+.info {
+  font: 110%/1.4 system-ui, sans-serif;
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: rgb(0, 0, 0);
+  border-radius: 8px;
+}
 
-  .info{
-    font: 110%/1.4 system-ui, sans-serif;
-    max-width: 800px;
-    margin: 3rem auto;
-    padding: 2rem;
-    background-color: rgb(0, 0, 0);
-    border-radius: 8px;
-  }
+h1 {
+  font-weight: 900;
+  letter-spacing: -0.1rem;
+}
 
-  h1 {
-    font-weight: 900;
-    letter-spacing: -0.1rem; 
-  }
-  
-  p {
-    max-width: 70ch;
-  }
-  
-  a {
-    color: inherit;
-  }
-  
-  pre {
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 1rem;
-    border-radius: 4px;
-  }
-  
-  .jest-lite-report {
-    border-radius: 4px;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  :root {
-    padding: 1rem;
-    background-color: #ffffff;
-    color: white;
-  }
+p {
+  max-width: 70ch;
+}
 
-.convocatoria2023 {
-  /* width: 500px; */
+a {
+  color: inherit;
+}
+
+pre {
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.jest-lite-report {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+:root {
+  padding: 1rem;
+  background-color: #ffffff;
+  color: white;
+}
+.convocatoria {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.convocatoria2023 img{
+.convocatoria2023 img {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-
+}
+.logo-2 {
+  position: relative;
+  bottom: 25px;
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
 }
 
-@media (max-width: 500px){
+@media (max-width: 500px) {
   .convocatoria2023 {
     width: 325px;
     align-self: center;
+  }
+  .logo-2 {
+    width: 355px;
+    position: relative;
+    right: 20px;
   }
 }
