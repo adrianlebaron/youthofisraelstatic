@@ -42,7 +42,7 @@ body * {
 .menu {
   pointer-events: none;
 }
-.menu--circle-au {
+.menu--circle-ms {
   position: absolute;
   bottom: 420px;
   z-index: 13;
@@ -219,14 +219,14 @@ body * {
   font-size: 30px;
   cursor: pointer;
 }
-
-/* stylos fa  */
+/* stylos fa   */
 .fa-brands {
-  font-size: 35px;
+  font-size: 30px;
   color: #392338;
 }
 .fa-solid {
-  font-size: 35px;
+  font-size: 30px;
+  color: #392338;
 }
 
 #menu__active {
@@ -308,77 +308,63 @@ body * {
   display: block;
 }
 
-/* ///////////////  */
+/* logo ///   */
 
-.logo {
+.logo-ms {
   display: flex;
   justify-content: center;
-  align-items: center;
-  opacity: 0.8;
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
 }
-
-.parrafo {
+.slogan {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  overflow: hidden;
-}
-.pa {
   color: #1c1c1c;
-  position: relative;
   font-size: 25px;
-  font-family: "Caveat", cursive;
-  animation: teclear 10s steps(125), efecto 0.5s step-end infinite alternate;
-}
-.parrafo-2 {
-  display: flex;
-  justify-content: center;
-}
-.pb {
-  color: #1c1c1c;
-  position: relative;
-  left: 500px;
-  font-size: 25px;
-  font-family: "Caveat", cursive;
-  animation: teclear 10s steps(125), efecto 0.5s step-end infinite alternate;
-}
-.aaa {
-  position: relative;
-  right: 450px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.galeria {
+/* video //  */
+
+.videos {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 30px;
-}
-.a {
+  gap: 100px;
   position: relative;
-  border-radius: 5px;
-  border: 1px solid #1c1c1c;
-  transition: 0.5s;
-  object-fit: cover;
+  top: 40px;
 }
-.a:hover {
-  transform: scale(1.2);
-  filter: saturate(180%);
+.videos-responsive {
+  display: none;
+}
+.img-ms {
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
 }
 
-
-@keyframes teclear {
-  from {
-    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
-  }
-  to {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-  }
+.boton {
+  position: relative;
+  display: inline-block;
+  padding: 0.9em 1.4em;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.3em;
+  background-color: red;
+  text-shadow: 0 -1px 0 #1a009d;
 }
-@keyframes efecto {
-  50% {
-    border-color: transparent;
-  }
+
+.boton:hover {
+  background-color: #5a5fde;
+}
+
+.boton:active {
+  margin-top: 4px;
+  border-bottom: 0px solid transparent !important;
 }
 
 @media only screen and (max-width: 900px) {
@@ -387,61 +373,72 @@ body * {
     width: 100% !important;
     overflow-x: hidden !important;
   }
-
-  .parrafo {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 800px;
-    gap: 10px;
-    position: relative;
-    left: 50px;
-  }
-  .pa {
-    position: relative;
-    font-size: 12px;
-    font-family: "Caveat", cursive;
-  }
-  .parrafo-2 {
-   display: flex; 
-   justify-content: center;
-   padding: 50px;
-  }
-  .aaa {
-    position: relative;
-    right: 0;
-    left: 10px;
-  }
-  .galeria {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-    position: relative;
-    right: 50px;
-  }
-  .a {
-    position: relative;
-    left: 40px;
-  }
-
-  .pb {
-    left: 0px;
-    right: 10px;
-    top: 5px;
-    position: relative;
-    font-size: 12px;
-    font-family: "Caveat", cursive;
-  }
-  .logo {
+  .logo-ms {
     position: relative;
     right: 190px;
     width: 800px;
   }
-  .menu--circle-au {
-    position: fixed !important;
-    top: 0px;
-    left: 0px;
+  .videos {
+    display: none;
+  }
+  .slogan {
+    position: relative;
+    top: 100px;
+    left: 20px;
+  }
+  .videos-responsive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+    position: relative;
+    top: 40px;
+  }
+  .videos-responsive {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    top: 150px;
+  }
+  .videos-responsive ::after {
+    padding-top: 56.25%;
+    display: block;
+    content: "";
+  }
+  .videos-responsive iframe .videos-responsive object .videos-responsive embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .img-ms {
+    top: 100px;
+    position: relative;
+    right: 350px;
+    width: 1100px;
+  }
+
+  .boton-n {
+    position: relative;
+    left: 160px;
+    
+    display: inline-block;
+    padding: 0.9em 1.4em;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.3em;
+    background-color: red;
+    text-shadow: 0 -1px 0 #1a009d;
+  }
+
+  .boton-n:hover {
+    background-color: #5a5fde;
+  }
+
+  .boton-n:active {
+    margin-top: 4px;
+    border-bottom: 0px solid transparent !important;
   }
 }
