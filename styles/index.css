@@ -1,3 +1,37 @@
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.menu-container {
+  display: flex;
+  justify-content: right;
+  position: relative;
+  bottom: 60px;
+  right: 30px;
+}
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  gap: 3rem;
+}
+.nav-list li a {
+  color: rgb(var(--txt, var(--color_15)));
+  text-decoration: none;
+  color: #1c1c1c;
+  transition: var(--trans, color 0.4s ease 0s);
+}
+.hover0 {
+  transition: all 300ms;
+}
+.hover0:hover {
+  transform: scale(1.22);
+}
+.menu-responsive {
+  display: none;
+}
+
 .info {
   font: 110%/1.4 system-ui, sans-serif;
   max-width: 800px;
@@ -48,21 +82,171 @@ pre {
   justify-content: center;
   box-sizing: border-box;
 }
-.logo-2 {
+.logo-home {
+  display: flex;
+  justify-content: left;
   position: relative;
-  bottom: 25px;
-  filter: brightness(1.1);
-  mix-blend-mode: multiply;
+  bottom: 20px;
+  right: 10px;
+}
+footer {
+  width: 100%;
+  background-color: #1c1c1c;
+  padding: 20px;
+  text-align: center;
 }
 
-@media (max-width: 500px) {
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+p {
+  margin: 0;
+}
+.pie {
+  position: relative;
+  left: 100px;
+}
+
+@media only screen and (max-width: 900px) {
+  @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500");
+  
+  .body {
+    margin: 0;
+    padding: 0;
+  }
+  .menu-container {
+    display: none;
+  }
+  .menu-responsive {
+    z-index: 9999 !important;
+    display: flex;
+    position: relative;
+    right: 55px;
+    bottom: 140px;
+  }
+
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+  .sidebar {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #1c1c1c;
+    transition: all 0.5s ease;
+  }
+  .sidebar header {
+    position: relative;
+    top: 10px;
+    font-size: 25px;
+    color: white;
+    line-height: 70px;
+    text-align: center;
+    background: #2c2c2c;
+    user-select: none;
+  }
+  .sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.4s;
+  }
+  header {
+    position: relative;
+    right: 35px;
+  }
+  ul li:hover a {
+    padding-left: 50px;
+  }
+  .sidebar ul a i {
+    margin-right: 16px;
+  }
+  #check {
+    display: none;
+  }
+  label #btn,
+  label #cancel {
+    position: absolute;
+    background: #1c1c1c;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  label #btn {
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all 0.5s;
+  }
+  label #cancel {
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 40px;
+    color: white;
+    padding: 4px 9px;
+    transition: all 0.5s ease;
+  }
+  #check:checked ~ .sidebar {
+    left: 0;
+  }
+  #check:checked ~ label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+  }
+  #check:checked ~ label #cancel {
+    left: 205px;
+  }
+  #check:checked ~ section {
+    margin-left: 250px;
+  }
+  section {
+    background: url(bg.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: all 0.5s;
+  }
   .convocatoria2023 {
     width: 325px;
     align-self: center;
   }
-  .logo-2 {
-    width: 355px;
+  .logo-home {
+    display: flex;
+    justify-content: center;
     position: relative;
-    right: 20px;
+  }
+  .lgh {
+    width: 25% !important;
+  }
+  .info {
+    position: relative;
+    bottom: 900px;
+  }
+  .convocatoria {
+    position: relative;
+    bottom: 900px;
+  }
+
+  footer {
+    position: relative;
+    bottom: 900px;
+    margin-bottom: -20px;
+  }
+  .pie {
+    position: relative;
+    left: 0px;
   }
 }

@@ -15,32 +15,49 @@
 
 <body>
 
-  <nav>
-    <div class="navbar">
-      <div class="container nav-container">
-        <input class="checkbox" type="checkbox" name="" id="" /> 
-        <div class="hamburger-lines">
-          <span class="line line1"></span>
-          <span class="line line2"></span>
-          <span class="line line3"></span>
-        </div>
-        <div class="logo">
-          <h1>YOI</h1>
-        </div>
-        <div class="logo-2">
-          <img src="./images/img-aboutUs/logo.jpg" style="width: 39%;">
-        </div>
-        <div class="menu-items">
+  <nav class="logo-home">
+      <img class="lgh" src="./images/img-aboutUs/logo.jpg" style="width: 6%;">
 
-          <li><a href="index.html">Home</a></li>
-          <li><a href="mission-statement.html">mission statement</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="aboutUs.html">About Us</a></li>
-
-        </div>
-      </div>
-    </div>
   </nav>
+
+  <nav class="menu-container">
+
+    <ul class="nav-list">
+      <li class="hover0">
+
+        <a href="./index.html">YOI</a>
+      </li>
+      <li class="hover0">
+
+        <a href="./mission-statement.html">Mission statement</a>
+      </li>
+      <li class="hover0">
+
+        <a href="./aboutUs.html">About us</a>
+      </li>
+      <li class="hover0">
+        <a href="./contact.html">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- menu responsive  -->
+  <div class="menu-responsive">
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+      <header>YOI Español</header>
+      <ul>
+        <li><a href="./index.html"><i class="fas fa-link"></i>YOI</a></li>
+        <li><a href="./mission-statement.html"><i class="fas fa-stream"></i>Mission statement</a></li>
+        <li><a href="./aboutUs.html\"><i class="far fa-question-circle"></i>About us</a></li>
+        <li><a href="./contact.html"><i class="far fa-envelope"></i>Contact</a></li>
+      </ul>
+    </div>
+    <section></section>
+  </div>
 
   <div class="info">
     <h1> Horario de clases en el pueblo </h1>
@@ -165,5 +182,10 @@
     <img class="convocatoria2023" src="./images/convocatoria-espanol-2023.jpg" width="900">
   </div>
 </body>
+<footer>
+  <div class="container">
+    <p class="pie">&copy; 2023 Y O I. All rights reserved.</p>
+  </div>
+</footer>
 
 </html>
