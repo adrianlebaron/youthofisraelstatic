@@ -13,27 +13,51 @@
 </head>
 
 <body>
-  <nav>
-    <div class="navbar">
-      <div class="container nav-container">
-        <input class="checkbox" type="checkbox" name="" id="" />
-        <div class="hamburger-lines">
-          <span class="line line1"></span>
-          <span class="line line2"></span>
-          <span class="line line3"></span>
-        </div>
-        <div class="logo">
-          <h1>YOI</h1>
-        </div>
-        <div class="menu-items">
-          <li><a href="index.html">YOI home</a></li>
-          <li><a href="españolYOI.html">YOI Español</a></li>
-          <li><a href="aboutUs.html">About us</a></li>
-          <li><a href="mission-statement.html">Mission statement</a></li>
-        </div>
-      </div>
-    </div>
+  <nav class="logo-home">
+    <img class="lgh" src="./images/img-aboutUs/logo.jpg" style="width: 6%;">
   </nav>
+
+  <nav class="menu-container">
+
+    <ul class="nav-list">
+      <li class="hover0">
+
+        <a href="./index.html">YOI</a>
+      </li>
+      <li class="hover0">
+
+        <a href="./españolYOI.html">YOI español</a>
+      </li>
+      <li class="hover0">
+
+        <a href="./mission-statement.html">Mission statement</a>
+      </li>
+      <li class="hover0">
+        <a href="./aboutUs.html">About us</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- menu responsive  -->
+  <div class="menu-responsive">
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+      <header>Y O I</header>
+      <ul>
+        <li><a href="./españolYOI.html"><i class="fas fa-link"></i>YOI español</a></li>
+        <li><a href="./mission-statement.html"><i class="fas fa-stream"></i>Mission statement</a></li>
+        <li><a href="./aboutUs.html"><i class="far fa-question-circle"></i>AboutUs</a></li>
+        <li><a href="./contact.html"><i class="far fa-envelope"></i>Contact</a></li>
+      </ul>
+    </div>
+    <section></section>
+  </div>
+
+
   <section id="contact">
     <h1 class="section-header">Contact</h1>
     <div class="contact-wrapper">
