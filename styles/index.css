@@ -1,14 +1,44 @@
-html,body {
+html,
+body {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 1em;
+}
+
+.anuncio {
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 230px;
+  position: relative;
+  left: 233px;
+}
+.anuncio-h1 {
+  color: red;
+  border-radius: 10px;
+  background-color: black;
+  padding: 5px;
+  font: 200%/1.8 system-ui, sans-serif;
+}
+.anuncio i {
+  position: relative;
+  left: 470px;
+  font-size: 40px;
+  top: 90px;
 }
 .menu-container {
   display: flex;
   justify-content: right;
   position: relative;
-  bottom: 60px;
+  bottom: 290px;
   right: 30px;
 }
 .nav-list {
@@ -31,14 +61,23 @@ html,body {
 .menu-responsive {
   display: none;
 }
+.menu-responsive-ing {
+  display: none;
+}
+.logo-home-ing {
+  position: relative;
+  bottom: 250px;
+}
 
 .info {
   font: 110%/1.4 system-ui, sans-serif;
   max-width: 800px;
   margin: 3rem auto;
-  padding: 2rem;
+  padding: 3rem;
   background-color: rgb(0, 0, 0);
   border-radius: 8px;
+  position: relative;
+  top: 100px;
 }
 
 h1 {
@@ -75,32 +114,36 @@ pre {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  top: 10px;
 }
 
 .convocatoria2023 img {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
+  position: relative;
+  top: 20px;
 }
 .logo-home {
   display: flex;
   justify-content: left;
   position: relative;
-  bottom: 20px;
+  bottom: 250px;
   right: 10px;
 }
 footer {
-  width: 100%;
+  margin-top: auto;
   background-color: #1c1c1c;
-  padding: 20px;
+  padding: 1em 0;
   text-align: center;
-}
-
+  position: relative;
+  color: white;
+  text-align: center;
+  }
 .container {
-  max-width: 960px;
   margin: 0 auto;
 }
-
 p {
   margin: 0;
 }
@@ -111,10 +154,16 @@ p {
 
 @media only screen and (max-width: 900px) {
   @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500");
-  
-  .body {
-    margin: 0;
-    padding: 0;
+
+  .anuncio-h1 {
+    position: relative;
+    right: 269px;
+  }
+  .anuncio i {
+    z-index: 9999 !important;
+    position: relative;
+    left: 0;
+    top: +200px;
   }
   .menu-container {
     display: none;
@@ -123,13 +172,32 @@ p {
     z-index: 9999 !important;
     display: flex;
     position: relative;
-    right: 55px;
-    bottom: 140px;
+    right: 40px;
+    bottom: 590px;
+  }
+  .menu-responsive-ing {
+    z-index: 9999 !important;
+    display: flex;
+    position: relative;
+    bottom: 650px;
+    right: 40px;
+  }
+  .logo-home {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 470px;
+  }
+  .logo-home-ing {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 530px;
   }
 
-  body {
+  /* body {
     font-family: "Roboto", sans-serif;
-  }
+  } */
   .sidebar {
     position: fixed;
     left: -250px;
@@ -223,27 +291,16 @@ p {
     width: 325px;
     align-self: center;
   }
-  .logo-home {
-    display: flex;
-    justify-content: center;
-    position: relative;
-  }
   .lgh {
     width: 25% !important;
   }
   .info {
-    position: relative;
-    bottom: 900px;
+    top: -750px;
+    right: 12px;
   }
   .convocatoria {
     position: relative;
-    bottom: 900px;
-  }
-
-  footer {
-    position: relative;
-    bottom: 900px;
-    margin-bottom: -20px;
+    top: -750px;
   }
   .pie {
     position: relative;

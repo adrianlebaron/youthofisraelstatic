@@ -182,6 +182,13 @@ footer {
   background-color: #1c1c1c;
   padding: 20px;
   text-align: center;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #555;
+  padding: 20px;
+  text-align: center;
 }
 
 p {
