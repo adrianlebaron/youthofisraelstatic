@@ -30,11 +30,18 @@ body {
 }
 .anuncio i {
   position: relative;
-  left: 470px;
+  left: 500px;
   font-size: 40px;
   top: 90px;
 }
 .menu-container {
+  display: flex;
+  justify-content: right;
+  position: relative;
+  bottom: 240px;
+  right: 30px;
+}
+.menu-container-esp {
   display: flex;
   justify-content: right;
   position: relative;
@@ -66,7 +73,7 @@ body {
 }
 .logo-home-ing {
   position: relative;
-  bottom: 250px;
+  bottom: 190px;
 }
 
 .info {
@@ -130,7 +137,6 @@ pre {
   justify-content: left;
   position: relative;
   bottom: 250px;
-  right: 10px;
 }
 footer {
   margin-top: auto;
