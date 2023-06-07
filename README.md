@@ -1,3 +1,3 @@
-# youthofisraelstatic
-html and css app
-Youth of Israel https://youthofisrael.com/
+# Youth of Israel static web site
+Built with HTML and CSS
+Youth of Israel at https://youthofisrael.com/
