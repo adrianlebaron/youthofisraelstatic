@@ -4,6 +4,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 .menu-container-aboutUS {
   display: flex;
@@ -179,21 +180,18 @@ h1 {
   display: none;
 }
 footer {
-  background-color: #1c1c1c;
+  width: 100%;
   padding: 20px;
   text-align: center;
+  color: #1c1c1c;
+  font-size: 20px;
 }
 
-p {
-  margin: 0px;
-  color: white;
-}
 @media only screen and (max-width: 900px) {
-  html,
-  body {
-    width: 100% !important;
+  .body {
+    margin: 0;
+    padding: 0;
     overflow-x: hidden !important;
-   
   }
   .menu-container-aboutUS {
     display: none;
@@ -359,6 +357,8 @@ p {
   }
   footer {
     position: relative;
-    bottom: 800px;
+    margin-bottom: -20px;
+    bottom: 900px;
+    font-size: 25px;
   }
 }

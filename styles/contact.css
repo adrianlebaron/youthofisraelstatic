@@ -4,6 +4,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 .menu-container {
   display: flex;
@@ -130,13 +131,19 @@ hr {
 .menu-responsive {
   display: none;
 }
+footer {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  color: #1c1c1c;
+  font-size: 20px;
+}
 
 /* Begin Media Queries*/
 @media only screen and (max-width: 900px) {
-  HTML,
-  body {
-    width: 100 !important;
-    overflow-x: hidden !important;
+  .body {
+    margin: 0;
+    padding: 0;
   }
   .menu-container {
     display: none;
@@ -145,11 +152,11 @@ hr {
     display: flex;
     justify-content: center;
   }
-  .logo-home img{
+  .logo-home img {
     position: relative;
     width: 20% !important;
   }
-    .menu-responsive {
+  .menu-responsive {
     z-index: 9999 !important;
     display: flex;
     position: relative;
@@ -303,4 +310,8 @@ hr {
   .send-button {
     width: 99%;
   }
-
+  footer {
+    position: relative;
+    margin-bottom: -20px;
+  }
+}
