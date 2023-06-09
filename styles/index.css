@@ -15,7 +15,7 @@ html,body {
   display: flex;
   list-style-type: none;
   gap: 3rem;
-}
+} 
 .nav-list li a {
   color: rgb(var(--txt, var(--color_15)));
   text-decoration: none;

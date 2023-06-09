@@ -7,7 +7,7 @@ html,body {
 }
 .menu-container {
   display: flex;
-  justify-content: right;
+  justify-content: right; 
   position: relative;
   bottom: 60px;
   right: 30px;
