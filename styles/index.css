@@ -18,7 +18,7 @@ body {
   display: flex;
   list-style-type: none;
   gap: 3rem;
-} 
+}
 .nav-list li a {
   color: rgb(var(--txt, var(--color_15)));
   text-decoration: none;
@@ -47,10 +47,12 @@ body {
 h1 {
   font-weight: 900;
   letter-spacing: -0.1rem;
+  font-size: 2rem;
 }
 
 p {
   max-width: 70ch;
+  font-size: 1rem;
 }
 
 a {
@@ -100,6 +102,8 @@ footer {
   font-size: 20px;
 }
 .container {
+  display: flex;
+  justify-content: center;
   max-width: 960px;
   margin: 0 auto;
 }
@@ -119,7 +123,7 @@ footer {
     display: flex;
     position: relative;
     right: 55px;
-    bottom: 140px;
+    bottom: 177px;
   }
 
   body {
@@ -221,6 +225,7 @@ footer {
   .logo-home {
     display: flex;
     justify-content: center;
+    margin-bottom: 40px;
     position: relative;
   }
   .lgh {
@@ -238,6 +243,6 @@ footer {
   footer {
     position: relative;
     margin-bottom: -20px;
-    bottom: 900px;
+    bottom: 800px;
   }
 }
