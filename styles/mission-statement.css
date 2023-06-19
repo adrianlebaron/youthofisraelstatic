@@ -1,7 +1,15 @@
+html,
+body {
+  width: 100%;
+  height: 100%; 
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins@font-face", sans-serif;
 
+}
 .menu-container {
   display: flex;
-  justify-content: right; 
+  justify-content: right;
   position: relative;
   bottom: 60px;
   right: 30px;
@@ -38,6 +46,7 @@
 h1 {
   font-weight: 900;
   letter-spacing: -0.1rem;
+  font-size: 2rem;
 }
 
 /* video //  */
@@ -50,6 +59,7 @@ h1 {
   gap: 100px;
   position: relative;
   top: 40px;
+  min-height: 100%;
 }
 .videos-responsive {
   display: none;
@@ -87,17 +97,28 @@ h1 {
 }
 footer {
   width: 100%;
-  padding: 20px;
+  padding: 0;
   text-align: center;
   color: #1c1c1c;
   font-size: 20px;
+  position: relative;
+  /* top: 60px; */
+}
+.container {
+  display: flex;
+  justify-content: center;
+  max-width: 960px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.img-ms-responsive {
+  display: none;
 }
 
 @media only screen and (max-width: 900px) {
-  html,
   body {
-    width: 100% !important;
-    overflow-x: hidden !important;
+    margin: 0;
+    padding: 0;
   }
   .menu-container {
     display: none;
@@ -109,6 +130,56 @@ footer {
   .logo-home img {
     position: relative;
     width: 20% !important;
+  }
+  .img-ms-responsive {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 900px;
+    margin-top: 60px;
+  }
+  .img-ms {
+    display: none;
+    /* right: 350px;
+    position: relative;
+    bottom: 900px;
+    width: 900px;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply; */
+  }
+  .slogan {
+    display: flex;
+    justify-content: center;
+    color: #1c1c1c;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 50px;
+    position: relative;
+    bottom: 900px;
+  }
+
+  .videos-responsive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding: 0;
+    position: relative;
+    bottom: 900px;
+  }
+  .videos-responsive iframe,
+  .videos-responsive object,
+  .videos-responsive embed {
+    width: 80%;
+    height: auto;
+  }
+  footer {
+    position: relative;
+    bottom: 900px;
   }
   .menu-responsive {
     z-index: 9999 !important;
@@ -210,26 +281,7 @@ footer {
   .videos {
     display: none;
   }
-  .slogan {
-    position: relative;
-    top: 100px;
-    left: 20px;
-  }
-  .videos-responsive {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 100px;
-    position: relative;
-    top: 40px;
-  }
-  .videos-responsive {
-    position: relative;
-    overflow: hidden;
-    padding: 0;
-    top: 150px;
-  }
+
   .videos-responsive ::after {
     padding-top: 56.25%;
     display: block;
@@ -241,12 +293,6 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-  }
-  .img-ms {
-    top: 100px;
-    position: relative;
-    right: 350px;
-    width: 1100px;
   }
 
   .boton-n {
@@ -269,16 +315,5 @@ footer {
   .boton-n:active {
     margin-top: 4px;
     border-bottom: 0px solid transparent !important;
-  }
-  footer {
-    position: relative;
-    margin-bottom: -20px;
-    font-size: 25px;
-    position: relative;
-    right: 20px;
-  }
-  .pie {
-    position: relative;
-    left: 0px;
   }
 }
