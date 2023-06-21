@@ -1,46 +1,44 @@
-html,
 body {
-  width: 100%;
-  height: 100%;
   margin: 0;
-  padding: 0;
+  padding: 10px;
   font-family: "Poppins", sans-serif;
-}
-.menu-container-aboutUS { 
   display: flex;
-  justify-content: right;
-  position: relative;
-  bottom: 60px;
-  right: 30px;
+  flex-direction: column;
 }
-.nav-list-aboutUS {
+
+/* Navbar styles */
+.navbar {
   display: flex;
-  list-style-type: none;
-  gap: 3rem;
-  font-family: "Poppins", sans-serif;
+  justify-content: space-between;
+  align-items: center;
 }
-.nav-list-aboutUS li a {
-  color: rgb(var(--txt, var(--color_15)));
+
+.logo {
+  width: 100px;
+}
+
+.navbar-links a {
+  color: #2c2c2c;
+  padding-left: 40px;
+  padding-right: 20px;
+  font-size: 22px;
+  font-weight: bold;
   text-decoration: none;
-  color: #1c1c1c;
-  transition: var(--trans, color 0.4s ease 0s);
 }
-.hover0 {
-  transition: all 300ms;
+
+.navbar-links a:hover {
+  color: green;
 }
-.hover0:hover {
-  transform: scale(1.22);
+
+.navbar-burger {
+  display: none;
 }
-.logo-aboutUs {
-  display: flex;
-  justify-content: left;
-}
+
 .parrafos {
-  font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 60px;
   overflow: hidden;
 }
 
@@ -50,317 +48,116 @@ body {
   font-size: 25px;
 }
 
+.parrafos>.first-parragraph-pic img {
+  width: 500px;
+}
+
 .pb {
   color: #1c1c1c;
   position: relative;
   font-size: 25px;
 }
 
-/* * {
-	margin: 0; 
-	padding: 0;
-} */
-
-body {
-  background: white;
-  font-family: "Poppins", sans-serif;
+.parrafos>.second-parragraph-pic img {
+  width: 500px;
 }
 
-h1 {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: #1c1c1c;
-  text-shadow: 0 1px 2px #3c3c3c;
+.pictures-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  /* gap: 20px; */
 }
 
-.contenedor-galeria {
-  width: 1300px;
-  height: 320px;
-  overflow: hidden;
-  margin: 50px auto;
-  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
-  -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
-  -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.contenedor-galeria ul {
-  width: 2000px;
+.column>.picture img {
+  width: 300px;
+  box-shadow: 6px 6px rgba(0, 0, 0, 0.2);
 }
 
-.contenedor-galeria li {
-  position: relative;
-  display: block;
-  width: 160px;
-  height: 350px;
-  float: left;
-  box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
-  transition: all 0.5s;
-}
-
-.contenedor-galeria ul:hover li {
-  width: 40px;
-  filter: brightness(50%);
-}
-
-.contenedor-galeria ul li:hover {
-  width: 640px;
-  filter: brightness(100%);
-}
-
-.contenedor-galeria li img {
-  display: block;
-  width: 640px;
-  height: 100%;
-}
-
-.titulo-imagen {
-  background: rgba(0, 0, 0, 0.8);
-  position: absolute;
-  top: 100%;
-  width: 100%;
-  display: block;
-  transition: all 0.5s ease;
-  animation: cambia-color 10s linear infinite;
-  background: -webkit-linear-gradient(
-    left,
-    rgba(0, 0, 0, 0.8),
-    rgba(255, 255, 255, 0.8)
-  );
-  background-size: 400% 400%;
-}
-.container-aboutUS {
-  max-width: 960px;
-  margin: 0 auto;
-}
-@keyframes cambia-color {
-  0% {
-    background-position: 0%, 50%;
-  }
-  50% {
-    background-position: 100%, 50%;
-  }
-  100% {
-    background-position: 0%, 100%;
-  }
-}
-
-.titulo-imagen a {
-  display: block;
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
-  padding: 20px;
-  font-size: 19px;
-  text-shadow: 0 1px 2px #000;
-  transition: all 0.5s ease;
-}
-
-.contenedor-galeria ul li:hover .titulo-imagen {
-  top: 0%;
-  box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
-}
-
-.titulo-imagen:hover a {
-  transform: scale(1.1);
-  transition: all 0.5s ease;
-}
-
-.titulo-imagen:active {
-  background: rgba(255, 255, 255, 0.5);
-}
-.menu-responsive {
-  display: none;
-}
-.gallery-responsive {
-  display: none;
-}
 footer {
-  width: 100%;
-  padding: 20px;
-  text-align: center;
-  color: #1c1c1c;
+  align-self: center;
   font-size: 20px;
 }
-.logo-aboutUs-responsive {
-  display: none;
-}
-@media only screen and (max-width: 900px) {
-  .body {
+
+@media (max-width: 600px) {
+  body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-  }
-  .menu-container-aboutUS {
-    display: none;
-  }
-  .contenedor-galeria {
-    display: none;
-  }
-  .logo-aboutUs-responsive {
     display: flex;
-    justify-content: center;
-  }
-  .logo-aboutUs img {
-    display: none;
-  }
-  .menu-responsive {
-    z-index: 9999 !important;
-    display: flex;
-    position: relative;
-    right: 38px;
-    bottom: 145px;
+    flex-direction: column;
+    /* height: 100vh; */
   }
 
-  body {
-    font-family: "Poppins", sans-serif;
-  }
-  .sidebar {
-    position: fixed;
-    left: -250px;
-    width: 250px;
-    height: 100%;
-    background: #1c1c1c;
-    transition: all 0.5s ease;
-  }
-  .sidebar header {
-    position: relative;
-    top: 10px;
-    font-size: 25px;
-    color: white;
-    line-height: 70px;
-    text-align: center;
-    background: #2c2c2c;
-    user-select: none;
-  }
-  .sidebar ul a {
+  .navbar-burger {
     display: block;
-    height: 100%;
-    width: 100%;
-    line-height: 65px;
-    font-size: 20px;
-    color: white;
-    padding-left: 40px;
-    box-sizing: border-box;
-    border-bottom: 1px solid black;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    transition: 0.4s;
+    font-size: 40px;
+    align-self: flex-start;
+    font-weight: bold;
   }
-  header {
-    position: relative;
-    right: 35px;
-  }
-  ul li:hover a {
-    padding-left: 50px;
-  }
-  .sidebar ul a i {
-    margin-right: 16px;
-  }
-  #check {
+
+  .navbar-links {
     display: none;
   }
-  label #btn,
-  label #cancel {
-    position: absolute;
-    background: #1c1c1c;
-    border-radius: 3px;
-    cursor: pointer;
+
+  .navbar-links a {
+    display: block;
+    padding: 10px;
   }
-  label #btn {
-    left: 40px;
-    top: 25px;
-    font-size: 35px;
-    color: white;
-    padding: 6px 12px;
-    transition: all 0.5s;
+
+  .logo {
+    display: none;
   }
-  label #cancel {
-    z-index: 1111;
-    left: -195px;
-    top: 17px;
-    font-size: 40px;
-    color: white;
-    padding: 4px 9px;
-    transition: all 0.5s ease;
-  }
-  #check:checked ~ .sidebar {
-    left: 0;
-  }
-  #check:checked ~ label #btn {
-    left: 250px;
-    opacity: 0;
-    pointer-events: none;
-  }
-  #check:checked ~ label #cancel {
-    left: 205px;
-  }
-  #check:checked ~ section {
-    margin-left: 250px;
-  }
-  section {
-    background: url(bg.jpeg) no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    transition: all 0.5s;
-  }
+
   .parrafos {
-    width: 370px;
-    font-family: "Poppins", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     overflow: hidden;
-    position: relative;
-    bottom: 3400px;
-    left: 15px;
+    border-top: 1px solid;
   }
 
   .pa {
     color: #1c1c1c;
     position: relative;
-    font-size: 16px;
-    bottom: 23px;
+    font-size: 15px;
   }
 
   .pb {
     color: #1c1c1c;
     position: relative;
-    font-size: 16px;
-  }
-  .galery {
-    position: relative;
-    bottom: 3400px;
-  }
-  /* galeria  */
-  .gallery-responsive {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: relative;
-    bottom: 550px;
+    font-size: 15px;
   }
 
-  .gallery-item {
-    margin: 10px;
+  .parrafos>.first-parragraph-pic img {
     width: 200px;
   }
 
-  .gallery-item img {
-    width: 100%;
-    height: auto;
+  .parrafos>.second-parragraph-pic img {
+    width: 200px;
   }
+
+  .pictures-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    border-top: 1px solid;
+  }
+
+  .column>.picture img {
+    margin-top: 10px;
+    width: 175px;
+    box-shadow: 6px 6px rgba(0, 0, 0, 0.2);
+  }
+
   footer {
-    position: relative;
-    margin-bottom: -20px;
     bottom: 900px;
     right: 25px;
   }
 }
-
-

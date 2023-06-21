@@ -5,58 +5,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/styles/styles.css">
   <link rel="stylesheet" href="/styles/index.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
-    integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <title>YOI Español</title> 
 </head>
 
 <body>
-  <nav class="logo-home">
-      <img class="lgh" src="./images/img-aboutUs/logo.jpg" style="width: 6%;">
-
-  </nav>
-
-  <nav class="menu-container">
-
-    <ul class="nav-list">
-      <li class="hover0">
-
-        <a href="./index.html">YOI</a>
-      </li>
-      <li class="hover0">
-
+  <nav class="navbar">
+    <div class="navbar-burger">&#9776;</div>
+    <img class="logo" src="./images/img-aboutUs/logo.jpg">
+    <div class="navbar-links">
+        <a href="./index.html">YOI </a>
+        <a href="./españolYOI.html">YOI español</a>
         <a href="./mission-statement.html">Mission statement</a>
-      </li>
-      <li class="hover0">
-
         <a href="./aboutUs.html">About us</a>
-      </li>
-      <li class="hover0">
         <a href="./contact.html">Contact</a>
-      </li>
-    </ul>
-  </nav>
-  <!-- menu responsive  -->
-  <div class="menu-responsive">
-    <input type="checkbox" id="check">
-    <label for="check">
-      <i class="fas fa-bars" id="btn"></i>
-      <i class="fas fa-times" id="cancel"></i>
-    </label>
-    <div class="sidebar">
-      <header>YOI Español</header>
-      <ul>
-        <li><a href="./index.html"><i class="fas fa-link"></i>YOI</a></li>
-        <li><a href="./mission-statement.html"><i class="fas fa-stream"></i>Mission statement</a></li>
-        <li><a href="./aboutUs.html\"><i class="far fa-question-circle"></i>About us</a></li>
-        <li><a href="./contact.html"><i class="far fa-envelope"></i>Contact</a></li>
-      </ul>
     </div>
-    <section></section>
-  </div>
+  </nav>
 
   <div class="info" style="background-color: white; color: red; margin-top: 0;">
     <h3>Si olvidaste la información de tu cuenta de <a style="color: green" href="https://lebarongaleana.com/app/login" target="_blank">Lebaron Galeana</a>, 
@@ -182,16 +147,20 @@
       <i class="fab fa-whatsapp" aria-hidden="true"></i>
     </a>
   </div>
+  </div>
 
-  </div>
-  <div class="convocatoria">
-    <img class="convocatoria2023" src="./images/convocatoria-espanol-2023.jpg" width="900">
-  </div>
+  <img class="convocatoria2023" src="./images/convocatoria-espanol-2023.jpg" width="900">
+
+  <footer>
+      <p class="pie">&copy; 2023 Youth of Israel. All rights reserved.</p>
+  </footer>  
 </body>
-<footer>
-  <div class="container">
-    <p class="pie">&copy; 2023 Youth of Israel. All rights reserved.</p>
-  </div>
-</footer>
-
+<script>
+  const burger = document.querySelector('.navbar-burger');
+  const navbarLinks = document.querySelector('.navbar-links');
+  
+  burger.addEventListener('click', () => {
+    navbarLinks.style.display = navbarLinks.style.display === 'none' ? 'block' : 'none';
+  });
+</script>
 </html>

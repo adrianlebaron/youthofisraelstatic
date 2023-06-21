@@ -2,109 +2,42 @@
 <html lang="en">
 
 <head>
-    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mission statement</title>
     <link rel="stylesheet" href="./styles/mission-statement.css">
-    <script src="https://kit.fontawesome.com/881537b2ce.js" crossorigin="anonymous"></script>
-
 </head>
  
 <body>
-    <nav class="logo-home">
-        <img class="lgh" src="./images/img-aboutUs/logo.jpg" style="width: 6%;">
-    </nav>
-
-    <nav class="menu-container">
-        <ul class="nav-list">
-            <li class="hover0">
-
-                <a href="./index.html">YOI </a>
-            </li>
-            <li class="hover0">
-
-                <a href="./españolYOI.html">YOI-Español</a>
-            </li>
-            <li class="hover0">
-
-                <a href="./aboutUs.html">About us</a>
-            </li>
-            <li class="hover0">
-                <a href="./contact.html">Contact</a>
-            </li>
-        </ul>
-    </nav>
-
-    <!-- menu responsive  -->
-    <div class="menu-responsive">
-        <input type="checkbox" id="check">
-        <label for="check">
-            <i class="fas fa-bars" id="btn"></i>
-            <i class="fas fa-times" id="cancel"></i>
-        </label>
-        <div class="sidebar">
-            <header>Y O I</header>
-            <ul>
-                <li><a href="./index.html"><i class="fas fa-link"></i>YOI</a></li>
-                <li><a href="./españolYOI.html"><i class="fas fa-stream"></i>YOI-Español</a></li>
-                <li><a href="./aboutUs.html"><i class="far fa-question-circle"></i>AboutUs</a></li>
-                <li><a href="./contact.html"><i class="far fa-envelope"></i>Contact</a></li>
-            </ul>
+    <nav class="navbar">
+        <div class="navbar-burger">&#9776;</div>
+        <img class="logo" src="./images/img-aboutUs/logo.jpg">
+        <div class="navbar-links">
+            <a href="./index.html">YOI </a>
+            <a href="./españolYOI.html">YOI español</a>
+            <a href="./mission-statement.html">Mission statement</a>
+            <a href="./aboutUs.html">About us</a>
+            <a href="./contact.html">Contact</a>
         </div>
-        <section></section>
-    </div>
-
-    <div class="img-ms">
-        <img class="a" src="./images/img-aboutUs/wh.jpg" style="width: 30%;">
-    </div>
-    <div class="img-ms-responsive">
-        <img class="a" src="./images/img-aboutUs/wh.jpg" style="width: 80%;">
-    </div>
+    </nav>
 
     <div class="slogan">
-        <h1>We Love Our Community, And We Enjoy Taking Care Of It</h1>
+        We Love Our Community, And We Enjoy Taking Care Of It
     </div>
-    <!-- seccion de video //  -->
-    <div class="videos">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/2K_Kq8nbO_Y" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/nG9Xb7Ck9Os" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-
-        <a href="https://youtube.com/watch?v=WBo4aOr-4Tk&feature=share" target="_blank">
-            <img src="./images/Capture-video-yoi.PNG" width="560" height="315" alt="">
-        </a>
-
-    </div>
-
-    <div class="videos-responsive">
-        <iframe src="        https://www.youtube.com/embed/2K_Kq8nbO_Y
-        " frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-
-        <iframe src="        https://www.youtube.com/embed/nG9Xb7Ck9Os
-            " frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-
-        <a href="https://youtube.com/watch?v=WBo4aOr-4Tk&feature=share" target="_blank">
-            <img src="./images/Capture-video-yoi.PNG" width="345" height="150" alt="">
-        </a>
+    <div class="mission-statement-image">
+        <img src="./images/img-aboutUs/wh.jpg">
     </div>
     <footer>
-        <div class="container">
-            <p class="pie">&copy; 2023 Youth of Israel. All rights reserved.</p>
-        </div>
+        <p class="pie">&copy; 2023 Youth of Israel. All rights reserved.</p>
     </footer>
-
 </body>
-
-
+<script>
+    const burger = document.querySelector('.navbar-burger');
+    const navbarLinks = document.querySelector('.navbar-links');
+    
+    burger.addEventListener('click', () => {
+      navbarLinks.style.display = navbarLinks.style.display === 'none' ? 'block' : 'none';
+    });
+  </script>
 </html>

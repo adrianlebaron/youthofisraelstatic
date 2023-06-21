@@ -1,39 +1,42 @@
-html,
 body {
-  width: 100%;
-  height: 100%;
   margin: 0;
-  padding: 0;
+  padding: 10px;
   font-family: "Poppins", sans-serif;
-}
-.menu-container {
   display: flex;
-  justify-content: right;
-  position: relative;
-  bottom: 60px;
-  right: 30px;
-}
-.nav-list {
-  display: flex;
-  list-style-type: none;
-  gap: 3rem;
-}
-.nav-list li a {
-  color: rgb(var(--txt, var(--color_15)));
-  text-decoration: none;
-  color: #1c1c1c;
-  transition: var(--trans, color 0.4s ease 0s);
-}
-.hover0 {
-  transition: all 300ms;
-}
-.hover0:hover {
-  transform: scale(1.22);
+  flex-direction: column;
+  height: 100vh;
 }
 
-#contact {
-  width: 100%;
-  height: 100%;
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+}
+
+.navbar-links a {
+  color: #2c2c2c;
+  padding-left: 40px;
+  padding-right: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-links a:hover {
+  color: green;
+}
+
+.navbar-burger {
+  display: none;
+}
+
+.navbar-links a:hover {
+  color: green;
 }
 
 .section-header {
@@ -44,78 +47,29 @@ body {
   text-transform: uppercase;
   letter-spacing: 6px;
 }
+
 h1 {
   font-weight: 900;
   letter-spacing: -0.1rem;
   font-size: 2rem;
 }
 
-.contact-wrapper {
+.contact>.contact-wrapper {
   display: flex;
   justify-content: center;
+  gap: 20px;
 }
 
-.alt-send-button {
-  width: 400px;
-  height: 34px;
-  transition: all 0.2s ease-in-out;
-}
-
-.send-text {
-  display: block;
-  margin-top: 10px;
-  font: 700 12px "Poppins", sans-serif;
-  letter-spacing: 2px;
-}
-
-.alt-send-button:hover {
-  transform: translate3d(0px, -29px, 0px);
-}
-
-/* Begin Right Contact Page */
-.direct-contact-container {
-  max-width: 400px;
-}
-
-/* Location, Phone, Email Section */
-.contact-list {
-  list-style-type: none;
-  margin-left: -30px;
-  padding-right: 20px;
-}
-
-.list-item {
-  line-height: 4;
+.contact>.contact-wrapper a {
   color: green;
-  list-style: none;
+  font-size: 20px;
 }
 
-.contact-text {
-  font: 300 18px "Poppins", sans-serif;
-  letter-spacing: 1.9px;
-  color: #bbb;
-}
-
-.place {
-  margin-left: 62px;
-}
-
-.phone {
-  margin-left: 56px;
-}
-
-.gmail {
-  margin-left: 53px;
-}
-
-.contact-text a {
-  color: #bbb;
-  text-decoration: none;
-  transition-duration: 0.2s;
-}
-
-.contact-text a:hover {
-  color: #fff;
+.facebook-icon {
+  margin-top: 20px;
+  font-size: 30px;
+  color: #2374e1;
+  align-self: center;
   text-decoration: none;
 }
 
@@ -133,196 +87,44 @@ hr {
 .whatsappLink {
   text-decoration: none;
 }
+
 .menu-responsive {
   display: none;
 }
+
 footer {
-  width: 100%;
-  padding: 20px;
-  text-align: center;
-  color: #1c1c1c;
+  position: absolute;
+  bottom: 0;
+  align-self: center;
   font-size: 20px;
 }
 
-/* Begin Media Queries*/
-@media only screen and (max-width: 900px) {
-  html body {
-    margin: 0;
-    padding: 0;
-    overflow-y: hidden;
-  }
-  .menu-container {
-    display: none;
-  }
-  .logo-home {
-    display: flex;
-    justify-content: center;
-  }
-  .logo-home img {
-    position: relative;
-    width: 20% !important;
-  }
-  section {
-    position: relative;
-    bottom: 800px;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
 
-  .menu-responsive {
-    z-index: 9999 !important;
-    display: flex;
-    position: relative;
-    bottom: 100px;
-    right: 33px;
-  }
-
-  body {
-    font-family: "Poppins", sans-serif;
-  }
-  .sidebar {
-    position: fixed;
-    left: -250px;
-    width: 250px;
-    height: 100%;
-    background: #1c1c1c;
-    transition: all 0.5s ease;
-  }
-  .sidebar header {
-    position: relative;
-    top: 10px;
-    font-size: 25px;
-    color: white;
-    line-height: 70px;
-    text-align: center;
-    background: #2c2c2c;
-    user-select: none;
-  }
-  .sidebar ul a {
+@media (max-width: 600px) {
+  .navbar-burger {
     display: block;
-    height: 100%;
-    width: 100%;
-    line-height: 65px;
-    font-size: 20px;
-    color: white;
-    padding-left: 40px;
-    box-sizing: border-box;
-    border-bottom: 1px solid black;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    transition: 0.4s;
-  }
-  header {
-    position: relative;
-    right: 35px;
-  }
-  ul li:hover a {
-    padding-left: 50px;
-  }
-  .sidebar ul a i {
-    margin-right: 16px;
-  }
-  #check {
-    display: none;
-  }
-  label #btn,
-  label #cancel {
-    position: absolute;
-    background: #1c1c1c;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  label #btn {
-    left: 40px;
-    top: 25px;
-    font-size: 35px;
-    color: white;
-    padding: 6px 12px;
-    transition: all 0.5s;
-  }
-  label #cancel {
-    z-index: 1111;
-    left: -195px;
-    top: 17px;
     font-size: 40px;
-    color: white;
-    padding: 4px 9px;
-    transition: all 0.5s ease;
-  }
-  #check:checked ~ .sidebar {
-    left: 0;
-  }
-  #check:checked ~ label #btn {
-    left: 250px;
-    opacity: 0;
-    pointer-events: none;
-  }
-  #check:checked ~ label #cancel {
-    left: 205px;
-  }
-  #check:checked ~ section {
-    margin-left: 250px;
-  }
-  section {
-    background: url(bg.jpeg) no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    transition: all 0.5s;
-  }
-  .contact-wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-  .direct-contact-container,
-  .form-horizontal {
-    margin: 0 auto;
+    align-self: flex-start;
+    font-weight: bold;
   }
 
-  .direct-contact-container {
-    margin-top: 60px;
-    max-width: 300px;
+  .navbar-links {
+    display: none;
   }
-  .social-media-list li {
-    height: 60px;
-    width: 60px;
-    line-height: 60px;
+
+  .navbar-links a {
+    display: block;
+    padding: 10px;
   }
-  .direct-contact-container,
-  .form-wrapper {
-    float: none;
-    margin: 0 auto;
-  }
-  .form-control,
-  textarea {
-    margin: 0 auto;
-  }
-  .name,
-  .email,
-  textarea {
-    width: 280px;
-  }
-  .direct-contact-container {
-    margin-top: 60px;
-    max-width: 280px;
-  }
-  .social-media-list {
-    left: 0;
-  }
-  .social-media-list li {
-    height: 55px;
-    width: 55px;
-    line-height: 55px;
-    font-size: 2rem;
-  }
-  .social-media-list li:after {
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
-  }
-  .send-button {
-    width: 99%;
-  }
-  footer {
-    position: relative;
-    margin-bottom: -20px;
-    bottom: 1100px;
+
+  .logo {
+    display: none;
   }
 }
