@@ -27,7 +27,7 @@ body {
 }
 
 .navbar-links a:hover {
-  color: green;
+  color: #7f8848;
 }
 
 .navbar-burger {
@@ -62,6 +62,12 @@ body {
   width: 500px;
 }
 
+.videos {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
 .pictures-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -80,11 +86,48 @@ body {
   box-shadow: 6px 6px rgba(0, 0, 0, 0.2);
 }
 
+/* Footer styles */
 footer {
-  align-self: center;
-  font-size: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px solid #7f8848;
+  padding-top: 10px;
+  margin-top: 25px;
 }
 
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer-message {
+  font-size: 18px;
+}
+
+.footer-whatsapp-icon {
+  font-size: 30px;
+  color: #7f8848;
+}
+
+.contact-wrapper a {
+  color: black;
+  padding: 5px;
+}
+
+.contact-wrapper a:hover {
+  color: #7f8848;
+}
+
+.footer-facebook-icon {
+  font-size: 30px;
+  color: #2374e1;
+  text-decoration: none;
+}
+
+/* Responsive/phone styles */
 @media (max-width: 600px) {
   body {
     margin: 0;
@@ -120,7 +163,7 @@ footer {
     align-items: center;
     gap: 10px;
     overflow: hidden;
-    border-top: 1px solid;
+    border-top: 1px solid #7f8848;
   }
 
   .pa {
@@ -143,21 +186,40 @@ footer {
     width: 200px;
   }
 
+  .videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .videos iframe {
+    width: 325px;
+    height: 250px
+  }
+
   .pictures-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
-    border-top: 1px solid;
+    border-top: 1px solid #7f8848;
   }
 
   .column>.picture img {
     margin-top: 10px;
     width: 175px;
-    box-shadow: 6px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px #7f8848;
   }
 
   footer {
-    bottom: 900px;
-    right: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-whatsapp-icon {
+    display: none;
+  }
+
+  .contact-wrapper a {
+    display: none;
   }
 }

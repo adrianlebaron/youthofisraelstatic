@@ -27,21 +27,37 @@ body {
 }
 
 .navbar-links a:hover {
-  color: green;
+  color: #7f8848;
 }
 
 .navbar-burger {
   display: none;
 }
 
+/* Body content and information styles */
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .info {
-  font: 110%/1.4 "Poppins", sans-serif;
-  max-width: 800px;
-  margin: 3rem auto;
+  width: 800px;
+  margin: 10px;
   padding: 2rem;
-  background-color: rgb(0, 0, 0);
+  background-color: #101010;
   border-radius: 8px;
   color: white;
+  font-size: 20px;
+}
+
+.lg-link {
+  color: #7f8848;
+}
+
+.link {
+  color: #7f8848;
 }
 
 .convocatoria2023 {
@@ -49,13 +65,48 @@ body {
   align-self: center;
 }
 
+/* Footer styles */
 footer {
-  padding: 20px;
-  text-align: center;
-  color: #1c1c1c;
-  font-size: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px solid #7f8848;
+  padding-top: 10px;
+  margin-top: 25px;
 }
 
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer-message {
+  font-size: 18px;
+}
+
+.footer-whatsapp-icon {
+  font-size: 30px;
+  color: #7f8848;
+}
+
+.contact-wrapper a {
+  color: black;
+  padding: 5px;
+}
+
+.contact-wrapper a:hover {
+  color: #7f8848;
+}
+
+.footer-facebook-icon {
+  font-size: 30px;
+  color: #2374e1;
+  text-decoration: none;
+}
+
+/* responsive/phone styles */
 @media (max-width: 600px) {
   body {
     margin: 0;
@@ -89,13 +140,31 @@ footer {
     width: 80%;
   }
 
+  .lg-link {
+    color: #7f8848;
+    font-size: 16px;
+  }
+
+  .link {
+    color: #7f8848;
+    font-size: 18px;
+  }
+
   .convocatoria2023 {
     width: 400px;
     align-self: center;
   }
 
   footer {
-    /* position: absolute; */
-    /* bottom: 0; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-whatsapp-icon {
+    display: none;
+  }
+
+  .contact-wrapper a {
+    display: none;
   }
 }
