@@ -4,6 +4,8 @@ body {
   font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
+
 }
 
 /* Navbar styles */
@@ -62,6 +64,9 @@ body {
 
 .convocatoria2023 {
   width: 800px;
+  align-self: center;
+}
+.god-family-community {
   align-self: center;
 }
 
@@ -154,7 +159,10 @@ footer {
     width: 400px;
     align-self: center;
   }
-
+  .god-family-community {
+    width: 400px;
+    align-self: center;
+  }
   footer {
     display: flex;
     flex-direction: column;
