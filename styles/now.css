@@ -1,0 +1,42 @@
+body {
+    width: 100;
+    height: 100;
+    margin: 0;
+    padding: 0;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+}
+
+.navbar-links a {
+    color: #2c2c2c;
+    padding-left: 40px;
+    padding-right: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-links a:hover {
+    color: #7f8848;
+}
+
+.navbar-burger {
+    display: none;
+}
+
+.navbar-burger {
+    display: none;
+}
