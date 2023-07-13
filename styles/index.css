@@ -41,7 +41,11 @@ body {
 .logo {
   width: 100px;
 }
-
+.clean-up {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
 .navbar-links a {
   color: #2c2c2c;
   padding-left: 40px;
@@ -89,7 +93,11 @@ body {
   width: 800px;
   align-self: center;
 }
-
+.god-family-community {
+  position: relative;
+  left: 260px;
+  padding: 10px;
+}
 
 /* Footer styles */
 footer {
@@ -161,6 +169,9 @@ footer {
   .logo {
     display: none;
   }
+  .clean-up {
+    width: 400px;
+  }
   .animacion-boton {
     margin: 10px;
     font-size: 1.2em;
@@ -187,6 +198,7 @@ footer {
   .god-family-community {
     width: 400px;
     align-self: center;
+    left: 0;
   }
   footer {
     display: flex;
