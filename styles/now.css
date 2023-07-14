@@ -3,7 +3,7 @@ body {
   height: 100;
   margin: 0;
   padding: 0;
-}
+} 
 
 .img {
   display: flex;
@@ -19,6 +19,10 @@ body {
 }
 .logo {
   width: 100px;
+}
+.suplly-img {
+  position: relative;
+  left: 400px;
 }
 .navbar-links a {
   color: #2c2c2c;
@@ -76,6 +80,9 @@ div span {
 .img-responsive {
   display: none;
 }
+.suplly-imgresponsive {
+  display: none;
+}
 
 @media (max-width: 600px) {
   body {
@@ -84,6 +91,9 @@ div span {
     display: flex;
     flex-direction: column;
     height: 100vh;
+  }
+  .suplly-img {
+    display: none;
   }
 
   .navbar-burger {
@@ -107,6 +117,9 @@ div span {
   }
   .img {
     display: none;
+  }
+  .suplly-imgresponsive {
+    display: flex;
   }
   .img-responsive {
     display: flex;
