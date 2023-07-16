@@ -183,4 +183,20 @@ div span {
     justify-content: center;
     padding: 40px;
   }
+  .are-you {
+    left: 20px;
+    width: 340px;
+  }
+  .lebaron-ranch {
+    left: 20px;
+    width: 340px;
+  }
+  .western {
+    left: 20px;
+    width: 340px;
+  }
+  .yoi-go-talent {
+    left: 20px;
+    width: 340px;
+  }
 }
