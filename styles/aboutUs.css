@@ -5,7 +5,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-
+ 
 /* Navbar styles */
 .navbar {
   display: flex;
@@ -15,6 +15,45 @@ body {
 
 .logo {
   width: 100px;
+}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 0 4px #ff9933;
+}
+
+.button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.button a:hover {
+  text-decoration: none;
 }
 
 .navbar-links a {

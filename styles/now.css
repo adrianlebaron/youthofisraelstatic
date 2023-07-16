@@ -3,14 +3,32 @@ body {
   height: 100;
   margin: 0;
   padding: 0;
-} 
+}
 
 .img {
   display: flex;
   justify-content: center;
   padding: 10px;
 }
-
+.are-you {
+  position: relative;
+  left: 380px;
+}
+.lebaron-ranch {
+  position: relative;
+  left: 380px;
+  padding: 10px;
+}
+.western {
+  position: relative;
+  left: 380px;
+  padding: 10px;
+}
+.yoi-go-talent {
+  position: relative;
+  left: 380px;
+  padding: 10px;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -20,6 +38,46 @@ body {
 .logo {
   width: 100px;
 }
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 0 4px #ff9933;
+}
+
+.button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.button a:hover {
+  text-decoration: none;
+}
+
 .suplly-img {
   position: relative;
   left: 400px;
@@ -83,7 +141,6 @@ div span {
 .suplly-imgresponsive {
   display: none;
 }
-
 @media (max-width: 600px) {
   body {
     margin: 0;
