@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    var canvas = document.createElement("canvas");
-    document.body.appendChild(canvas);
+    var canvas = document.getElementById("confetti");
     var ctx = canvas.getContext("2d");
   
     // Set canvas dimensions
@@ -9,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
     var pieces = [];
     var numPieces = 100;
+    var animationRunning = true;
   
     // Create confetti pieces
     for (var i = 0; i < numPieces; i++) {
@@ -48,9 +48,21 @@ document.addEventListener("DOMContentLoaded", function() {
       this.draw = function() {
         ctx.save();
         ctx.translate(this.x, this.y);
-        ctx.rotate(this.rotation * Math.PI / 180);
-        ctx.fillStyle = "rgba(" + Math.floor(Math.random() * 255) + "," + Math.floor(Math.random() * 255) + "," + Math.floor(Math.random() * 255) + ", 0.8)";
-        ctx.fillRect(-this.radius, -this.radius, this.radius * 2, this.radius * 2);
+        ctx.rotate((this.rotation * Math.PI) / 180);
+        ctx.fillStyle =
+          "rgba(" +
+          Math.floor(Math.random() * 255) +
+          "," +
+          Math.floor(Math.random() * 255) +
+          "," +
+          Math.floor(Math.random() * 255) +
+          ", 0.8)";
+        ctx.fillRect(
+          -this.radius,
+          -this.radius,
+          this.radius * 2,
+          this.radius * 2
+        );
         ctx.restore();
       };
     }
@@ -62,15 +74,19 @@ document.addEventListener("DOMContentLoaded", function() {
         pieces[i].update();
       }
   
-      requestAnimationFrame(animate);
+      if (animationRunning) {
+        requestAnimationFrame(animate);
+      } else {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+      }
     }
   
     animate();
   
     // Detener la animación después de 5 segundos
     setTimeout(function() {
-      cancelAnimationFrame(animate);
-      document.body.removeChild(canvas);
-    }, 5000);
+      animationRunning = false;
+      canvas.style.display = "none";
+    }, 3000);
   });
   
