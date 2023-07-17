@@ -5,12 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Now</title>
-  <link rel="stylesheet" href="./styles/now.css">
+  <link rel="stylesheet" href="./styles/now.css">  
+
+
+
+
+
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
     integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous" />
 </head>
 
 <body>
+
+
   <nav class="navbar">
     <div class="navbar-burger">&#9776;</div>
     <img class="logo" src="./images/img-aboutUs/logo.jpg">
@@ -22,12 +30,14 @@
       <a href="./mission-statement.html">Mission statement</a>
       <a href="./aboutUs.html">About us</a>
     </div>
+
   </nav>
+
+ <canvas id="confetti"></canvas>
   <img class="are-you" src="./images/are-you.jpg" width="700" alt="">
   <img class="lebaron-ranch" src="./images/lebaron-ranch.jpg" width="700" alt="">
   <img class="western" src="./images/western.jpg" width="700" alt="">
   <img class="yoi-go-talent" src="./images/yoi-go-talent.jpg" width="700" alt="">
-
 
 
   <img class="suplly-img" src="./images/suplly-list_00001.jpg" width="700" height="1300" alt="">
@@ -37,6 +47,7 @@
   </div>
   <div class="img-responsive"><img src="./images/yoi-blog2023.jpg" width="380" alt="">
   </div>
+
   <footer>
     <div class="contact-wrapper">
       <div class="footer-whatsapp-icon">
@@ -56,6 +67,7 @@
       </a>
       Visit our Facebook page!
     </div>
+
   </footer>
   <script>
     const burger = document.querySelector('.navbar-burger');
@@ -64,8 +76,9 @@
     burger.addEventListener('click', () => {
       navbarLinks.style.display = navbarLinks.style.display === 'none' ? 'block' : 'none';
     });
-  </script>
 
+  </script>
+  <script src="script.js"></script>
 </body>
 
 </html>
