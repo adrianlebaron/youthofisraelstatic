@@ -199,6 +199,12 @@ footer {
     font-size: 1.2em;
   }
 
+  iframe {
+    position: relative;
+    width: 380px;
+    height: 200px;
+  }
+
   .info {
     width: 80%;
   }

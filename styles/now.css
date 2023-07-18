@@ -10,9 +10,11 @@
   justify-content: center;
   padding: 10px;
 }
-
-
-
+.video {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
 canvas {
   position: absolute;
   top: 0;
@@ -184,6 +186,12 @@ div span {
   }
   .img {
     display: none;
+  }
+  iframe {
+    position: relative;
+    left: 8px;
+    width: 600px;
+    height: 200px;
   }
   .suplly-imgresponsive {
     display: flex;
