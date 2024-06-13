@@ -5,6 +5,7 @@ body {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
+  align-items: center;
 }
 
 .navbar {
@@ -16,11 +17,7 @@ body {
 .logo {
   width: 100px;
 }
-.clean-up {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-}
+
 .navbar-links a {
   color: #2c2c2c;
   padding-left: 40px;
@@ -32,10 +29,6 @@ body {
 
 .navbar-links a:hover {
   color: #7f8848;
-}
-
-.navbar-burger {
-  display: none;
 }
 
 /* Body content and information styles */
@@ -124,27 +117,18 @@ footer {
     height: 100vh;
   }
 
-  .navbar-burger {
-    display: block;
-    font-size: 40px;
-    align-self: flex-start;
-    font-weight: bold;
-  }
-
-  .navbar-links {
-    display: none;
-  }
-
   .navbar-links a {
     display: block;
     padding: 10px;
+    font-size: 15px;
   }
 
   .logo {
     display: none;
   }
-  .clean-up {
-    width: 400px;
+  
+  .imagen-anuncio {
+    width: 330px;
   }
   .animacion-boton {
     margin: 10px;
@@ -159,6 +143,7 @@ footer {
 
   .info {
     width: 80%;
+    font-size: 15px;
   }
 
   .lg-link {

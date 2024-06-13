@@ -4,6 +4,7 @@ body {
   font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
  
 /* Navbar styles */
@@ -15,45 +16,6 @@ body {
 
 .logo {
   width: 100px;
-}
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
-  text-align: center;
-  text-decoration: none;
-  background-color: #ff6600;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  animation: pulse 1s infinite;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.button:focus {
-  outline: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 0 4px #ff9933;
-}
-
-.button a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.button a:hover {
-  text-decoration: none;
 }
 
 .navbar-links a {
@@ -135,31 +97,6 @@ footer {
   margin-top: 25px;
 }
 
-.contact-wrapper {
-  display: flex;
-  flex-direction: column;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.footer-message {
-  font-size: 18px;
-}
-
-.footer-whatsapp-icon {
-  font-size: 30px;
-  color: #7f8848;
-}
-
-.contact-wrapper a {
-  color: black;
-  padding: 5px;
-}
-
-.contact-wrapper a:hover {
-  color: #7f8848;
-}
-
 .footer-facebook-icon {
   font-size: 30px;
   color: #2374e1;
@@ -183,13 +120,10 @@ footer {
     font-weight: bold;
   }
 
-  .navbar-links {
-    display: none;
-  }
-
   .navbar-links a {
     display: block;
     padding: 10px;
+    font-size: 15px;
   }
 
   .logo {
@@ -252,13 +186,5 @@ footer {
   footer {
     display: flex;
     flex-direction: column;
-  }
-
-  .footer-whatsapp-icon {
-    display: none;
-  }
-
-  .contact-wrapper a {
-    display: none;
   }
 }
