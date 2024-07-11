@@ -18,7 +18,8 @@ body {
   width: 100px;
 }
 
-.navbar-links a {
+
+.navbar-link {
   color: #2c2c2c;
   padding-left: 40px;
   padding-right: 20px;
@@ -27,8 +28,12 @@ body {
   text-decoration: none;
 }
 
-.navbar-links a:hover {
-  color: #7f8848;
+.current {
+  text-decoration: underline;
+}
+
+.navbar-link:hover {
+  color: grey;
 }
 
 /* Body content and information styles */
@@ -43,7 +48,7 @@ body {
   width: 800px;
   margin: 10px;
   padding: 2rem;
-  background-color: #C4FCEF;
+  /* background-color: #C4FCEF; */
   border-radius: 8px;
   font-size: 20px;
 }
